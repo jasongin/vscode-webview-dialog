@@ -1,0 +1,17 @@
+{
+  "name": "vscode-webview-dialog-test",
+  "version": "0.1.0",
+  "description": "Tests dialog-style webviews for VS Code extensions.",
+  "main": "../out/test/extension.js",
+  "scripts": {
+    "compile": "tsc --build"
+  },
+  "author": "jasongin@microsoft.com",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.36.0"
+  },
+  "activationEvents": [
+    "*"
+  ]
+}

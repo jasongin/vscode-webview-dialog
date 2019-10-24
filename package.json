@@ -1,0 +1,17 @@
+{
+  "name": "vscode-webview-dialog",
+  "version": "0.1.0",
+  "description": "Supports dialog-style webviews for VS Code extensions.",
+  "main": "out/lib/index.js",
+  "scripts": {
+    "compile": "tsc --build",
+    "compile-test": "tsc --build test",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jasongin@microsoft.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/vscode": "^1.39.0",
+    "typescript": "^3.6.4"
+  }
+}
