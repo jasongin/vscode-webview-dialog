@@ -11,6 +11,7 @@
 	"author": "jasongin@microsoft.com",
 	"license": "MIT",
 	"devDependencies": {
+		"@types/node": "^12.11.7",
 		"@types/vscode": "^1.39.0",
 		"typescript": "^3.6.4"
 	}

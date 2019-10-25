@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Create an Environment</title>
+
+	<meta charset="UTF-8">
+
+	<meta http-equiv="Content-Security-Policy" content="
+		default-src 'none';
+		img-src ${webview.cspSource};
+		script-src 'self' ${webview.cspSource};
+		style-src 'self' ${webview.cspSource};
+	" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" href="./dialog.css"></style>
+	<script src="./dialog.js"></script>
+</head>
+
+<body>
+	<h2>Create an Environment</h2>
+	<div class="field">
+		<div class="label">Plan:</div>
+		<select name="plan">
+			<option value="1">Plan 1 (West US 2)</option>
+			<option value="2">Plan 2 (East US)</option>
+			<option value="3">Plan 3 (Southeast Asia)</option>
+			<option value="4">Create a new plan</option>
+		</select>
+		<a class="help" title="help text">&#x1F6c8;</a>
+	</div>
+	<div class="field">
+		<div class="label">Environment type:</div>
+		<select name="type">
+			<option value="1">Linux Standard</option>
+			<option value="2">Linux Premium</option>
+			<option value="3">Windows</option>
+		</select>
+		<a class="help" title="help text">&#x1F6c8;</a>
+	</div>
+	<div class="field">
+		<div class="label">Environment name:</div>
+		<input id='envName' type="text" size="20" />
+		<a class="help" title="help text">&#x1F6c8;</a>
+	</div>
+	<div class="field">
+		<div class="label">Suspend after:</div>
+		<select name="plan">
+			<option value="1">30 minutes</option>
+			<option value="2">2 hours</option>
+			<option value="3">Never</option>
+		</select>
+		<a class="help" title="help text">&#x1F6c8;</a>
+	</div>
+	<div class="submit">
+		<button id="submitCreate" disabled="true">Create</button>
+		<button id="submitCancel">Cancel</button>
+	</div>
+</body>
+
+</html>

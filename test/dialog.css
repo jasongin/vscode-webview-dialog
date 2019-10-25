@@ -1,0 +1,52 @@
+/*
+ * TODO: Adapt to VS Code theme:
+ * https://code.visualstudio.com/api/extension-guides/webview#theming-webview-content
+ */
+
+body {
+	margin-left: 10px;
+	font-family: sans-serif;
+}
+
+div.field {
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+div.label {
+	width: 10em;
+	float: left;
+	margin-top: .5em;
+}
+
+div.field select, div.field input {
+	width: 15em;
+	float: left;
+	margin-top: .5em;
+}
+div.field input {
+	width: 14.75em;
+}
+
+a.help {
+	margin-left: .5em;
+	font-size: 150%;
+	cursor: default;
+	color: gray;
+}
+
+div.submit {
+	margin-top: 1em;
+}
+
+div.submit button {
+	margin-right: .5em;
+	padding-top: .3em;
+	padding-bottom: .3em;
+	padding-left: .8em;
+	padding-right: .8em;
+}
+
+#submitCreate {
+	font-weight: bold;
+}
