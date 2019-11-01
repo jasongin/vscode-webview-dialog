@@ -5,7 +5,7 @@ This repo contains a library project `vscode-webview-dialog` and a test/demo VS 
 
 ## Development instructions
 1. Open the repo root directory in VS Code.
-2. Run `npm install` at the root.
+2. Run `yarn` at the root.
 3. Press F5 to launch the test extension in a new VS Code window.
 4. Use the command palette to invoke the command: `WebView Dialog Test: Show Dialog`
 

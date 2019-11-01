@@ -1,12 +1,14 @@
 {
 	"extends": "../tsconfig.json",
 	"compilerOptions": {
-		"outDir": "../out/test",
-		"tsBuildInfoFile": "../out/test/tsbuildinfo.json",
+		"outDir": "out",
+		"tsBuildInfoFile": "out/tsbuildinfo.json",
 		"rootDir": ".",
 		"experimentalDecorators": true
 	},
-	"exclude": [],
+	"exclude": [
+		"out"
+	],
 	"references": [
 		{
 			"path": ".."

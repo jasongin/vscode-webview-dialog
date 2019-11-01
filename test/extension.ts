@@ -1,7 +1,7 @@
 
 import * as vscode from 'vscode';
 import * as path from 'path';
-import * as dialog from '../lib';
+import * as dialog from 'vscode-webview-dialog';
 
 export async function activate(context: vscode.ExtensionContext): Promise<void> {
 	vscode.commands.registerCommand('vscode-webview-dialog-test.showDialog', showWebview);
@@ -15,7 +15,7 @@ interface TestDialogResult {
 }
 
 async function showWebview(): Promise<void> {
-	const testDir = path.resolve(__dirname, '../../test');
+	const testDir = path.resolve(__dirname, '..');
 	const d = new dialog.WebviewDialog<TestDialogResult>(
 		'webview-dialog-test', testDir, 'dialog.html');
 	const result: TestDialogResult | null = await d.getResult();
