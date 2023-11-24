@@ -15,7 +15,7 @@ export class WebviewDialog<TResult> implements vscode.Disposable {
 	public get webview(): vscode.Webview { return this.panel.webview; }
 
 	/**
-	 * Construts a new webview dialog. The dialog is shown as soon as
+	 * Constructs a new webview dialog. The dialog is shown as soon as
 	 * it is constructed.
 	 *
 	 * The dialog instance may only be used once. It may not be re-shown
